@@ -7,8 +7,8 @@ var DATOS = {
   cancion: { titulo: "Dime", artista: "Kevin Kaarl", src: "dime.mp3" },
   historia: [
     { fecha: "Octubre 2025", titulo: "El día que empezó todo", texto: "Todavía recuerdo lo nervioso que estaba y lo fácil que fue hablar contigo." },
-    { fecha: "Noviembre 2025", titulo: "Nuestra primera salida", texto: "Quería que el rato no se acabara. Desde ahí supe que quería más días como ese." },
-    { fecha: "Diciembre 2025", titulo: "Nuestra primera Navidad", texto: "Un día sencillo que se volvió de mis favoritos." },
+    { fecha: "Octubre 2025", titulo: "Nuestra primera salida", texto: "Quería que el rato no se acabara. Desde ahí supe que quería más días como ese, ademas de poder ir a la iglesia con usted siendo mi novia." },
+    { fecha: "Diciembre 2025", titulo: "Nuestra primera Navidad", texto: "Un día sencillo apesar de no estra juntos,que se volvió de mis favoritos." },
     { fecha: "Febrero 2026", titulo: "Nuestro primer 14 de febrero", texto: "Sin planes enormes, solo tú y yo." },
     { fecha: "Hoy", titulo: "Un año", texto: "Y todavía me emociona verte llegar." }
   ],
