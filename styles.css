@@ -1,3 +1,8 @@
+/* Base para que la página funcione igual fuera de Claude (GitHub Pages) */
+[hidden] { display: none !important; }
+img { max-width: 100%; }
+body { margin: 0; }
+
 /* Layout: título y contador arriba, un sobre centrado que se abre y se expande en una carta; enredaderas con flores a los lados y corazones que suben flotando por detrás. */
 :root {
   --bg: #fbeff1;
