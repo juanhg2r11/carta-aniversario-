@@ -1,6 +1,6 @@
 /* ===== Datos de la página: edita aquí ===== */
 var DATOS = {
-  nombre: "Mi vida Jemy Banely",           // nombre completo: Jemy Banely González Mendoza
+  nombre: "Mi, vida Jemy Banely💗",           // nombre completo: Jemy Banely González Mendoza
   apodo: "cariño",
   desde: "2025-10-10T15:00:00",           // 10 de octubre de 2025, 3:00 pm
   firma: "Juan",
