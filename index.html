@@ -1,0 +1,67 @@
+<title>Nuestro primer año</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Young+Serif&family=Figtree:wght@400;500;600&family=Caveat:wght@500;700&display=swap">
+<link rel="stylesheet" href="styles.css">
+
+<svg width="0" height="0" style="position:absolute" aria-hidden="true" focusable="false">
+  <defs>
+    <symbol id="corazon" viewBox="0 0 24 24"><path fill="currentColor" d="M12 21.35l-1.45-1.32C5.4 15.36 2 12.28 2 8.5 2 5.42 4.42 3 7.5 3c1.74 0 3.41.81 4.5 2.09C13.09 3.81 14.76 3 16.5 3 19.58 3 22 5.42 22 8.5c0 3.78-3.4 6.86-8.55 11.54L12 21.35z"/></symbol>
+    <symbol id="flor" viewBox="0 0 100 100">
+      <g fill="currentColor">
+        <ellipse cx="50" cy="27" rx="15" ry="23"/>
+        <ellipse cx="50" cy="27" rx="15" ry="23" transform="rotate(72 50 50)"/>
+        <ellipse cx="50" cy="27" rx="15" ry="23" transform="rotate(144 50 50)"/>
+        <ellipse cx="50" cy="27" rx="15" ry="23" transform="rotate(216 50 50)"/>
+        <ellipse cx="50" cy="27" rx="15" ry="23" transform="rotate(288 50 50)"/>
+      </g>
+      <circle cx="50" cy="50" r="11" style="fill: var(--gold)"/>
+    </symbol>
+    <symbol id="nota" viewBox="0 0 24 24"><path fill="currentColor" d="M9 3v11.55A4 4 0 1 0 11 18V8h7V3H9z"/></symbol>
+    <symbol id="play" viewBox="0 0 24 24"><path fill="currentColor" d="M8 5v14l11-7z"/></symbol>
+    <symbol id="pausa" viewBox="0 0 24 24"><path fill="currentColor" d="M6 5h4v14H6zM14 5h4v14h-4z"/></symbol>
+  </defs>
+</svg>
+
+<div class="floaters" id="floaters" aria-hidden="true"></div>
+<div class="vine left" id="vine-izq" aria-hidden="true"></div>
+<div class="vine right" id="vine-der" aria-hidden="true"></div>
+
+<main class="wrap">
+  <header class="hero">
+    <div class="big-one" aria-hidden="true">1</div>
+    <h1>Un año <em>contigo</em></h1>
+    <p class="for" id="para"></p>
+    <div class="counter" id="counter" role="timer" aria-label="Tiempo juntos"></div>
+  </header>
+
+  <div class="stage" id="stage">
+    <div class="env-wrap" id="envwrap">
+      <button class="env" id="sobre" type="button" aria-expanded="false" aria-controls="carta" aria-label="Abrir la carta">
+        <span class="back"></span>
+        <span class="paper"><i></i></span>
+        <span class="front"></span>
+        <span class="flap"></span>
+        <span class="seal"><svg aria-hidden="true"><use href="#corazon" width="100%" height="100%"/></svg></span>
+      </button>
+      <p class="hint" id="hint">Toca el sobre para abrirlo.</p>
+    </div>
+
+    <article class="letter" id="carta" tabindex="-1" hidden></article>
+  </div>
+
+  <footer id="pie"></footer>
+</main>
+
+<aside class="ahora" id="ahora" aria-label="Música" hidden>
+  <div class="ahora-in">
+    <div class="eq" id="eq" aria-hidden="true"><i></i><i></i><i></i><i></i></div>
+    <div class="ahora-t">
+      <span class="ahora-l" id="ahora-l">Sonando ahora</span>
+      <strong id="ahora-n"></strong>
+    </div>
+    <button class="ahora-btn" id="ahora-btn" type="button" aria-label="Pausar música"><svg aria-hidden="true"><use href="#pausa" width="100%" height="100%"/></svg></button>
+  </div>
+</aside>
+
+<script src="script.js"></script>
