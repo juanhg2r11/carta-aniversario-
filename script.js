@@ -58,7 +58,7 @@ var DATOS = {
     return s;
   }
 
-  $("para").textContent = "Para ti, " + DATOS.nombre;
+  $("para").textContent = "Para ti " + DATOS.nombre;
 
   /* ---- Contador ---- */
   var inicio = new Date(DATOS.desde);
@@ -156,7 +156,7 @@ var DATOS = {
 
     function pintar() {
       barra.classList.toggle("pausada", !suena);
-      $("ahora-l").textContent = suena ? "Sonando ahora" : "En pausa";
+      $("ahora-l").textContent = suena ? " " : "En pausa";
       btn.setAttribute("aria-label", suena ? "Pausar música" : "Reproducir música");
       btn.querySelector("use").setAttribute("href", suena ? "#pausa" : "#play");
     }
